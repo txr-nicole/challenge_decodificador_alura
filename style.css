@@ -1,0 +1,251 @@
+* {
+    background-color: #E9ECF8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    box-sizing: border-box;
+    color: #0A3871;
+}
+
+body {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: calc(100vh - 80px);
+
+}
+
+header {
+    max-width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.encriptar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: calc(168px - 40px) 0px calc(72px - 40px);
+}
+
+.textArea {
+    max-width: 501px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.textArea::placeholder {
+    color: #0A3871;
+}
+
+.informacao h6 {
+    font-size: .4rem;
+    margin: .5rem;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.btn-encriptar,
+.btn-desencriptar {
+    width: 236px;
+    height: 47px;
+    border-radius: 24px;
+    font-size: .5rem
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-desencriptar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.resultado {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.resultado div {
+    width: 232px;
+    position: absolute;
+    top: 475px;
+
+}
+
+.resultado div h4 {
+    font-size: .55rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 0px;
+    line-height: 120%;
+    background-color: #FFFFFF;
+}
+
+.resultado div p {
+    font-size: .4rem;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    margin: 0px;
+    background-color: #FFFFFF;
+}
+
+.mensagem {
+    width: 236px;
+    height: 570px;
+    background-image: url(./imagens/High\ quality\ products\ 1\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #FFFFFF;
+    border: none;
+    resize: none;
+    outline: none;
+
+}
+
+.btn-copiar {
+    height: 47px;
+    border-radius: 24px;
+    font-size: .5rem;
+    border: 1px solid #0A3871;
+    background-color: #FFFFFF;
+}
+
+@media (min-width:801px) and (max-width: 1024px) {
+    body {
+        grid-template-columns: 100px auto;
+    }
+
+    .textArea {
+        width: 400px;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 180px;
+    }
+
+    .resultado {
+        min-width: 210px;
+    }
+
+    .mensagem {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media (min-width:481px) and (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 49px 1fr;
+    }
+
+    main {
+        flex-direction: column;
+        height: calc(100vh - 130px);
+
+    }
+
+    .encriptar {
+        padding: 116px 0px 64px;
+        height: 100%;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 100%;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+
+    .mensagem {
+        width: 100%;
+        height: 10vh;
+        max-height: 30vh;
+        background-image: none;
+    }
+
+    .resultado div {
+        width: 100%;
+        position: relative;
+        top: -40px;
+    }
+}
+
+@media (min-width:230px) and (max-width: 480px){
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 24px;
+    }
+
+    main {
+        flex-direction: column;
+        height: calc(100vh - 130px);
+        
+    }
+
+    .encriptar {
+        padding: 116px 0px 64px;
+        height: 100%;
+    }
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 100%;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+
+    .mensagem {
+        width: 100%;
+        height: 10vh;
+        max-height: 30vh;
+        background-image: none;
+    }
+
+    .resultado div {
+        width: 100%;
+        position: relative;
+        top: -40px;
+    }
+}
